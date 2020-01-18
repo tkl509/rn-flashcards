@@ -1,18 +1,14 @@
 import React from 'react';
-import Main from './components/MainComponent';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, ScrollView, Text } from 'react-native';
+import Home from './components/Home';
+import TabNav from './components/TabNav';
 
 export default function App() {
-  return (
-    <Main />
-  );
+    return (
+      <ScrollView>
+        <View style={{ flex: 1, marginTop: 50 }}> 
+          <TabNav />
+        </View>
+      </ScrollView>
+    );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#0ff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

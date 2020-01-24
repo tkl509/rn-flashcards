@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { ScrollView, Text, View } from 'react-native';
+import { StyleSheet, ScrollView, Text, View } from 'react-native';
 
 class TabThree extends Component {
 
   render() {
     return (
       <ScrollView>
-        <View>
-          <Text style={{marginLeft: 50}}>
+        <View style={styles.container}>
+          <Text>
             Quiz -questions and multiple choice answers
           </Text>
         </View>
@@ -15,5 +15,14 @@ class TabThree extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    marginTop: 20,
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+});
 
 export default TabThree;

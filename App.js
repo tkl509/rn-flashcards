@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, ScrollView, Text } from 'react-native';
-import Home from './components/Home';
 import TabNav from './components/TabNav';
 
 export default function App() {
